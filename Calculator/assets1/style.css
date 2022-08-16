@@ -1,0 +1,208 @@
+::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+}
+
+.calculator-grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 100vh;
+  -ms-grid-columns: (90px)[4];
+  grid-template-columns: repeat(4, 90px);
+  -ms-grid-rows: minmax(90px, auto) (90px)[5];
+  grid-template-rows: minmax(90px, auto) repeat(5, 90px);
+}
+
+.calculator-grid > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.calculator-grid > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.calculator-grid > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.calculator-grid > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.calculator-grid > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.calculator-grid > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+
+.calculator-grid > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+
+.calculator-grid > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+
+.calculator-grid > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.calculator-grid > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+
+.calculator-grid > *:nth-child(11) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.calculator-grid > *:nth-child(12) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+}
+
+.calculator-grid > *:nth-child(13) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+}
+
+.calculator-grid > *:nth-child(14) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+}
+
+.calculator-grid > *:nth-child(15) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+}
+
+.calculator-grid > *:nth-child(16) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+}
+
+.calculator-grid > *:nth-child(17) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.calculator-grid > *:nth-child(18) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+}
+
+.calculator-grid > *:nth-child(19) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.calculator-grid > *:nth-child(20) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+}
+
+.calculator-grid > *:nth-child(21) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+}
+
+.calculator-grid > *:nth-child(22) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+}
+
+.calculator-grid > *:nth-child(23) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+}
+
+.calculator-grid > *:nth-child(24) {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: 1px, solid #FFFFFF;
+  outline: none;
+  background-color: rbga(255, 255, 255, 0.75);
+  border-radius: 8px;
+}
+
+.calculator-grid > button:hover {
+  background-color: #dad9d9;
+  border-color: transparent;
+}
+
+.span-two {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  color: #23042a;
+  border-color: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  -webkit-box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+          box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.output {
+  grid-column: 1/-1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, right top, left top, from(#29323c), color-stop(#485563), color-stop(#2b5876), to(#4e4376));
+  background: linear-gradient(to left, #29323c, #485563, #2b5876, #4e4376);
+  border: 3px, solid, black;
+  border-color: #060937;
+  margin-top: 0.5%;
+}
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: rgb(138, 240, 5);
+  font-size: 2.5rem;
+}
